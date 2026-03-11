@@ -1,0 +1,41 @@
+div{
+    width: 150px;
+    height: 150px;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-name: box;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+body{
+    background-color: black;
+
+}
+@keyframes box{
+   0%{
+     top: 0px;
+     left: 0px;
+   }
+   25%{
+    top: 350px;
+    left: 0px;
+    background-image: url(logo1.avif);
+   }
+   50%{
+    top: 400px;
+    left: 400px;
+    background-image: url(logo2.png);
+   }
+   75%{
+    top: 0px;
+    left: 400px;
+    background-image: url(logo3.png);
+   }
+   100%{
+    top: 0px;
+    left: 0px;
+    background-image: url(logo.png);
+   }
+}
